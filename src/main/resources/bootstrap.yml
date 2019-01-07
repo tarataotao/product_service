@@ -18,4 +18,18 @@ spring:
       profile: test
       #建议用lable去区分环境，默认是lable是master分支
       label: test
+  rabbitmq:
+    host: 192.168.213.131
+    port: 5672
+    username: guest
+    password: guest
+
+
+#暴露全部的监控信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
